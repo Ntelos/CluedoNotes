@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+	option.red {background-color: #ff1a1a; font-weight: bold;}
+	option.yellow {background-color: #ffff1a; font-weight: bold;}
+	option.white {background-color: #ffffff; font-weight: bold;}
+	option.green {background-color: #1aff1a; font-weight: bold;}
+	option.blue {background-color: #1a53ff; font-weight: bold;}
+	option.purple {background-color: #8c1aff; font-weight: bold;}
+</style>
+</head>
+
+<body>
+	Cluedo Notes<br>
+
+	<label for="pnum">Players (2-6):</label>
+	<button type="button"><</button>
+	<label id="pnum">4</label>
+	<button type="button">></button>
+	<br>
+
+	<label for="pnames">Names:</label><br>
+
+	<div name="name_color_input">
+		<input type="text" id="p1" maxlength="8">
+		<select id="c1">
+			<option class="red" value="red">Red</option>
+			<option class="yellow" value="yellow">Yellow</option>
+			<option class="white" value="white">White</option>
+			<option class="green" value="green">Green</option>
+			<option class="blue" value="blue">Blue</option>
+			<option class="purple" value="purple">Purple</option>
+		</select><br><br>
+
+		<input type="text" id="p2" maxlength="8">
+		<select id="c2">
+			<option class="yellow" value="yellow">Yellow</option>
+			<option class="red" value="red">Red</option>
+			<option class="white" value="white">White</option>
+			<option class="green" value="green">Green</option>
+			<option class="blue" value="blue">Blue</option>
+			<option class="purple" value="purple">Purple</option>
+		</select><br><br>
+
+		<input type="text" id="p3" maxlength="8">
+		<select id="c3">
+			<option class="white" value="white">White</option>
+			<option class="yellow" value="yellow">Yellow</option>
+			<option class="red" value="red">Red</option>
+			<option class="green" value="green">Green</option>
+			<option class="blue" value="blue">Blue</option>
+			<option class="purple" value="purple">Purple</option>
+		</select><br><br>
+
+		<input type="text" id="p4" maxlength="8">
+		<select id="c4">
+			<option class="green" value="green">Green</option>
+			<option class="yellow" value="yellow">Yellow</option>
+			<option class="white" value="white">White</option>
+			<option class="red" value="red">Red</option>
+			<option class="blue" value="blue">Blue</option>
+			<option class="purple" value="purple">Purple</option>
+		</select><br><br>
+
+		<input type="text" id="p5" maxlength="8">
+		<select id="c5">
+			<option class="blue" value="blue">Blue</option>
+			<option class="yellow" value="yellow">Yellow</option>
+			<option class="white" value="white">White</option>
+			<option class="green" value="green">Green</option>
+			<option class="red" value="red">Red</option>
+			<option class="purple" value="purple">Purple</option>
+		</select><br><br>
+
+		<input type="text" id="p6" maxlength="8">
+		<select id="c6">
+			<option class="purple" value="purple">Purple</option>
+			<option class="yellow" value="yellow">Yellow</option>
+			<option class="white" value="white">White</option>
+			<option class="green" value="green">Green</option>
+			<option class="blue" value="blue">Blue</option>
+			<option class="red" value="red">Red</option>
+		</select><br><br>
+	</div>
+
+	<button type="button">Start</button>
+</body>
+
+</html>
