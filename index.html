@@ -3,6 +3,8 @@
 
 <head>
 <style>
+	#title {font-family: Fantasy; font-size: 170%}
+	
 	.content {text-align: center;}
 	
 	option.red {background-color: #ff1a1a; font-weight: bold;}
@@ -11,6 +13,9 @@
 	option.green {background-color: #1aff1a; font-weight: bold;}
 	option.blue {background-color: #1a53ff; font-weight: bold;}
 	option.purple {background-color: #8c1aff; font-weight: bold;}
+	
+	#nc5 {display: none;}
+	#nc6 {display: none;}
 </style>
 </head>
 
@@ -28,65 +33,77 @@
 	<label for="pnames">Names</label>
 	<br><br>
 	<div name="name_color_input">
-		<input type="text" id="p1" maxlength="8">
-		<select id="c1">
-			<option class="red" value="red">Red</option>
-			<option class="yellow" value="yellow">Yellow</option>
-			<option class="white" value="white">White</option>
-			<option class="green" value="green">Green</option>
-			<option class="blue" value="blue">Blue</option>
-			<option class="purple" value="purple">Purple</option>
-		</select><br><br>
-
-		<input type="text" id="p2" maxlength="8">
-		<select id="c2">
-			<option class="yellow" value="yellow">Yellow</option>
-			<option class="red" value="red">Red</option>
-			<option class="white" value="white">White</option>
-			<option class="green" value="green">Green</option>
-			<option class="blue" value="blue">Blue</option>
-			<option class="purple" value="purple">Purple</option>
-		</select><br><br>
-
-		<input type="text" id="p3" maxlength="8">
-		<select id="c3">
-			<option class="white" value="white">White</option>
-			<option class="yellow" value="yellow">Yellow</option>
-			<option class="red" value="red">Red</option>
-			<option class="green" value="green">Green</option>
-			<option class="blue" value="blue">Blue</option>
-			<option class="purple" value="purple">Purple</option>
-		</select><br><br>
-
-		<input type="text" id="p4" maxlength="8">
-		<select id="c4">
-			<option class="green" value="green">Green</option>
-			<option class="yellow" value="yellow">Yellow</option>
-			<option class="white" value="white">White</option>
-			<option class="red" value="red">Red</option>
-			<option class="blue" value="blue">Blue</option>
-			<option class="purple" value="purple">Purple</option>
-		</select><br><br>
-
-		<input type="text" id="p5" maxlength="8">
-		<select id="c5">
-			<option class="blue" value="blue">Blue</option>
-			<option class="yellow" value="yellow">Yellow</option>
-			<option class="white" value="white">White</option>
-			<option class="green" value="green">Green</option>
-			<option class="red" value="red">Red</option>
-			<option class="purple" value="purple">Purple</option>
-		</select><br><br>
-
-		<input type="text" id="p6" maxlength="8">
-		<select id="c6">
-			<option class="purple" value="purple">Purple</option>
-			<option class="yellow" value="yellow">Yellow</option>
-			<option class="white" value="white">White</option>
-			<option class="green" value="green">Green</option>
-			<option class="blue" value="blue">Blue</option>
-			<option class="red" value="red">Red</option>
-		</select><br><br>
+		<div class="nc" id="nc1">
+			<input type="text" id="p1" maxlength="8">
+			<select id="c1">
+				<option class="red" value="red">Red</option>
+				<option class="yellow" value="yellow">Yellow</option>
+				<option class="white" value="white">White</option>
+				<option class="green" value="green">Green</option>
+				<option class="blue" value="blue">Blue</option>
+				<option class="purple" value="purple">Purple</option>
+			</select>
+		</div><br>
+		
+		<div class="nc" id="nc2">
+			<input type="text" id="p2" maxlength="8">
+			<select id="c2">
+				<option class="yellow" value="yellow">Yellow</option>
+				<option class="red" value="red">Red</option>
+				<option class="white" value="white">White</option>
+				<option class="green" value="green">Green</option>
+				<option class="blue" value="blue">Blue</option>
+				<option class="purple" value="purple">Purple</option>
+			</select>
+		</div><br>
+		
+		<div class="nc" id="nc3">
+			<input type="text" id="p3" maxlength="8">
+			<select id="c3">
+				<option class="white" value="white">White</option>
+				<option class="yellow" value="yellow">Yellow</option>
+				<option class="red" value="red">Red</option>
+				<option class="green" value="green">Green</option>
+				<option class="blue" value="blue">Blue</option>
+				<option class="purple" value="purple">Purple</option>
+			</select>
+		</div><br>
+		
+		<div class="nc" id="nc4">
+			<input type="text" id="p4" maxlength="8">
+			<select id="c4">
+				<option class="green" value="green">Green</option>
+				<option class="yellow" value="yellow">Yellow</option>
+				<option class="white" value="white">White</option>
+				<option class="red" value="red">Red</option>
+				<option class="blue" value="blue">Blue</option>
+				<option class="purple" value="purple">Purple</option>
+			</select>
+		</div><br>
+		
+		<div class="nc" id="nc5">
+			<input type="text" id="p5" maxlength="8">
+			<select id="c5">
+				<option class="blue" value="blue">Blue</option>
+				<option class="yellow" value="yellow">Yellow</option>
+				<option class="white" value="white">White</option>
+				<option class="green" value="green">Green</option>
+				<option class="red" value="red">Red</option>
+				<option class="purple" value="purple">Purple</option>
+			</select>
+		</div><br>
+		
+		<div class="nc" id="nc6">
+			<input type="text" id="p6" maxlength="8">
+			<select id="c6">
+				<option class="purple" value="purple">Purple</option>
+				<option class="yellow" value="yellow">Yellow</option>
+				<option class="white" value="white">White</option>
+				<option class="green" value="green">Green</option>
+				<option class="blue" value="blue">Blue</option>
+				<option class="red" value="red">Red</option>
+			</select>
+		</div><br>
 	</div>
 
 	<button type="button">Start</button>
@@ -95,11 +112,24 @@
 
 <script>
 	var n = Number(document.getElementById("pnum").innerHTML);
+	var ncs = document.getElementsByClassName("nc");
+	update();
+	
+	function update() {
+		for (i = 0; i < ncs.length; i++) {
+			if (i < n) {
+				ncs[i].style.display = 'block';
+			}else {
+				ncs[i].style.display = 'none';
+			}
+		}
+	}
 
 	function subpnum() {
 		if (n > 2) {
 			document.getElementById("pnum").innerHTML = n-1;
 			n--;
+			update();
 		}
 	}
 	
@@ -107,6 +137,7 @@
 		if (n < 6) {
 			document.getElementById("pnum").innerHTML = n+1;
 			n++;
+			update();
 		}
 	}
 </script>
