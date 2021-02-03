@@ -3,6 +3,8 @@
 
 <head>
 <style>
+	.content {text-align: center;}
+	
 	option.red {background-color: #ff1a1a; font-weight: bold;}
 	option.yellow {background-color: #ffff1a; font-weight: bold;}
 	option.white {background-color: #ffffff; font-weight: bold;}
@@ -12,17 +14,19 @@
 </style>
 </head>
 
-<body>
-	Cluedo Notes<br>
+<body>	
+<div class="content">
+	<label id="title">Cluedo Notes</label>
+	<br><br>
 
 	<label for="pnum">Players (2-6):</label>
-	<button type="button"><</button>
+	<button type="button" onclick="subpnum()"><</button>
 	<label id="pnum">4</label>
-	<button type="button">></button>
-	<br>
+	<button type="button" onclick="addpnum()">></button>
+	<br><br>
 
-	<label for="pnames">Names:</label><br>
-
+	<label for="pnames">Names</label>
+	<br><br>
 	<div name="name_color_input">
 		<input type="text" id="p1" maxlength="8">
 		<select id="c1">
@@ -86,6 +90,25 @@
 	</div>
 
 	<button type="button">Start</button>
+</div>
 </body>
+
+<script>
+	var n = Number(document.getElementById("pnum").innerHTML);
+
+	function subpnum() {
+		if (n > 2) {
+			document.getElementById("pnum").innerHTML = n-1;
+			n--;
+		}
+	}
+	
+	function addpnum() {
+		if (n < 6) {
+			document.getElementById("pnum").innerHTML = n+1;
+			n++;
+		}
+	}
+</script>
 
 </html>
