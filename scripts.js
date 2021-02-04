@@ -27,3 +27,13 @@ function addpnum() {
 		update();
 	}
 }
+
+function getdata() {
+	var data = [n]
+	for (i = 0; i < n; i++) {
+		if (ncs[i].style.display != 'none') {
+			data.push(ncs[i].getElementsByTagName("input")[0].value);
+			data.push(ncs[i].getElementsByTagName("select")[0].value);
+		}
+	}
+}
