@@ -36,4 +36,6 @@ function getdata() {
 			data.push(ncs[i].getElementsByTagName("select")[0].value);
 		}
 	}
+	
+	window.location = "board.php?data="+data;
 }
