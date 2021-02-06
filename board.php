@@ -41,7 +41,7 @@
 				<th>Ποιος;</th>
 				<?php
 					//for ($i = 0; $i <= $data[0]; $i++;) {
-						echo "<th style="color:$data[2];">$data[1]</th>"
+						echo "<th style=\"color:$data[2];\">$data[1]</th>";
 					//}
 				?>
 			  </tr>
