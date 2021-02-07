@@ -40,9 +40,9 @@
 			  <tr>
 				<th>Ποιος;</th>
 				<?php
-					//for ($i = 0; $i <= $data[0]; $i++;) {
-						echo "<th style=\"color:$data[2];\">$data[1]</th>";
-					//}
+					for ($i = 0; $i <= $data[0]; $i++) { //numberOfPlayers, name1, color1, name2, color2, ...
+						echo "<th style=\"color:$data[i+2];\">$data[i+1]</th>";
+					}
 				?>
 			  </tr>
 			  <tr>
