@@ -29,8 +29,6 @@
 	<body>
 		<?php
 			$data = explode(",",$_GET['data']);
-
-			echo $data;
 		?>
 		
 		<div class="content">
@@ -40,142 +38,184 @@
 			  <tr>
 				<th>Ποιος;</th>
 				<?php
-					for ($i = 0; $i <= $data[0]; $i++) { //numberOfPlayers, name1, color1, name2, color2, ...
-						echo "<th style=\"color:$data[i+2];\">$data[i+1]</th>";
+					for ($i = 2; $i <= sizeof($data); $i = $i+2) { //numberOfPlayers, name1, color1, name2, color2, ...
+						echo "<th style=\"color:" . $data[$i] . ";\">" . $data[$i-1] . "</th>";
 					}
 				?>
 			  </tr>
 			  <tr>
 				<td>Πράσινος</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Μουστάρδας</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Ορχιδέα</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Παγώνη</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Δαμασκηνός</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Φλόγα</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td style="font-weight: bold;">Τι;</td>
 			  </tr>
 			  <tr>
 				<td>Κηροπήγειο</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Στιλέτο</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Σωλήνας</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Περίστροφο</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Σχοινί</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Εργαλείο</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td style="font-weight: bold;">Που;</td>
 			  </tr>
 			  <tr>
 				<td>Αίθουσα Χωρού</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Αίθουσα Μπιλιάρδου</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Θερμοκήπειο</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Τραπεζαρία</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Χολ</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Κουζίνα</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Βιβλιοθήκη</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Σαλόνι</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			  <tr>
 				<td>Δωμάτιο Μελέτης</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<?php
+					for ($j = 1; $j <= $data[0]; $j++) {
+						echo "<td></td>";
+					}
+				?>
 			  </tr>
 			</table>
 		</div>
