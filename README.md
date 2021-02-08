@@ -11,16 +11,16 @@ You can easily alter them in your language by editing the \<th> elements at the 
 
 ## Demo
 By visiting the <i>index.html</i> page you can:
-Select the number of the players including yourself
-Type their names 
-Select their pawn's color
-<image>
+* Select the number of the players including yourself
+* Type their names 
+* Select their pawn's color
+![Demo Screenshot from the index page](https://github.com/Ntelos/Cluedo-Notes/blob/main/images/demo_index.png?raw=true)
 
 When you are ready press the "Start" button and you will be redirected to the <i>board.php</i> page.
 There you can see the names of the players colored with their pawn's color.
 At this page you can click in every cell of any row except the first one. By clicking in any cell you mark randomly with
 one of the following colors: green, red, yellow.
-<image>
+![Demo Screenshot from the index page](https://github.com/Ntelos/Cluedo-Notes/blob/main/images/demo_board.png?raw=true)
 
 My thinking about the marking:
 
