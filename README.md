@@ -4,7 +4,7 @@
 * [Future Updates](#future-updates)
 
 ## General Info
-An interactive page for keeping notes of your Cluedo games.
+An interactive page for keeping notes of your <b>Cluedo games.
 	
 Keep in mind that the names at the board are displayed in the Greek language.
 You can easily alter them in your language by editing the \<th> elements at the board.php file.
