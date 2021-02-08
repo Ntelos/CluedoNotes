@@ -31,15 +31,19 @@ My thinking about the <b>marking</b>:
 If you mark the <b>first column</b>:
 
 <b>Red:</b> The card of the suspect/object/room is held by someone.
+
 <b>Green:</b> The card of the suspect/object/room is in the envelope, thus it will be included to your final accusation.
+
 <b>Yellow:</b> You are not sure about the suspect/object/room.
 
-Marking a <b>Player's column</b>:
+Marking a <b>player's column</b>:
 
 <b>Red:</b> This player does not hold the card that its name is displayed at the start of the row. If the whole row is red-mark 
 means that this card is inside the envelope, thus you can green-mark the name of the card.
+
 <b>Green:</b> This player holds the card that its name is displayed at the start of the row. That means that this card is not 
 inside the envelope so you can red-mark its name.
+
 <b>Yellow:</b> This player was questioned about the card of this row but you are not sure if you hold it or not.
 
 ## Future Updates
