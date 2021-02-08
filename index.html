@@ -1,106 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			
+		<title>Cluedo Notes</title>
 		
-	<title>Cluedo Notes</title>
-	
-	<link rel="stylesheet" href="styles.css">
-	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-</head>
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	</head>
 
-<body>	
-<div class="content">
-	<label id="title">Cluedo Notes</label>
-	<br><br>
+	<body>	
+		<div class="content">
+			<label id="title">Cluedo Notes</label>
+			<br><br>
 
-	<label for="pnum">Players (2-6):</label>
-	<button type="button" onclick="subpnum()"><</button>
-	<label id="pnum">4</label>
-	<button type="button" onclick="addpnum()">></button>
-	<br><br>
+			<label for="pnum">Players (2-6):</label>
+			<button type="button" onclick="subpnum()"><</button>
+			<label id="pnum">4</label>
+			<button type="button" onclick="addpnum()">></button>
+			<br><br>
 
-	<label for="pnames">Names</label>
-	<br><br>
-	<div id="name_color_input">
-		<div class="nc" id="nc1">
-			<input type="text" id="p1" maxlength="8">
-			<select id="c1">
-				<option class="red" value="red">Red</option>
-				<option class="yellow" value="yellow">Yellow</option>
-				<option class="pink" value="pink">Pink</option>
-				<option class="green" value="green">Green</option>
-				<option class="blue" value="blue">Blue</option>
-				<option class="purple" value="purple">Purple</option>
-			</select>
-		</div><br>
-		
-		<div class="nc" id="nc2">
-			<input type="text" id="p2" maxlength="8">
-			<select id="c2">
-				<option class="yellow" value="yellow">Yellow</option>
-				<option class="red" value="red">Red</option>
-				<option class="pink" value="pink">Pink</option>
-				<option class="green" value="green">Green</option>
-				<option class="blue" value="blue">Blue</option>
-				<option class="purple" value="purple">Purple</option>
-			</select>
-		</div><br>
-		
-		<div class="nc" id="nc3">
-			<input type="text" id="p3" maxlength="8">
-			<select id="c3">
-				<option class="pink" value="pink">Pink</option>
-				<option class="yellow" value="yellow">Yellow</option>
-				<option class="red" value="red">Red</option>
-				<option class="green" value="green">Green</option>
-				<option class="blue" value="blue">Blue</option>
-				<option class="purple" value="purple">Purple</option>
-			</select>
-		</div><br>
-		
-		<div class="nc" id="nc4">
-			<input type="text" id="p4" maxlength="8">
-			<select id="c4">
-				<option class="green" value="green">Green</option>
-				<option class="yellow" value="yellow">Yellow</option>
-				<option class="pink" value="pink">Pink</option>
-				<option class="red" value="red">Red</option>
-				<option class="blue" value="blue">Blue</option>
-				<option class="purple" value="purple">Purple</option>
-			</select>
-		</div><br>
-		
-		<div class="nc" id="nc5">
-			<input type="text" id="p5" maxlength="8">
-			<select id="c5">
-				<option class="blue" value="blue">Blue</option>
-				<option class="yellow" value="yellow">Yellow</option>
-				<option class="pink" value="pink">Pink</option>
-				<option class="green" value="green">Green</option>
-				<option class="red" value="red">Red</option>
-				<option class="purple" value="purple">Purple</option>
-			</select>
-		</div><br>
-		
-		<div class="nc" id="nc6">
-			<input type="text" id="p6" maxlength="8">
-			<select id="c6">
-				<option class="purple" value="purple">Purple</option>
-				<option class="yellow" value="yellow">Yellow</option>
-				<option class="pink" value="pink">Pink</option>
-				<option class="green" value="green">Green</option>
-				<option class="blue" value="blue">Blue</option>
-				<option class="red" value="red">Red</option>
-			</select>
-		</div><br>
-	</div>
+			<label for="pnames">Names</label>
+			<br><br>
+			
+			<div id="name_color_input">
+				<div class="nc" id="nc1">
+					<input type="text" id="p1" maxlength="8">
+					<select id="c1">
+						<option class="red" value="red">Red</option>
+						<option class="yellow" value="yellow">Yellow</option>
+						<option class="pink" value="pink">Pink</option>
+						<option class="green" value="green">Green</option>
+						<option class="blue" value="blue">Blue</option>
+						<option class="purple" value="purple">Purple</option>
+					</select>
+				</div><br>
+				
+				<div class="nc" id="nc2">
+					<input type="text" id="p2" maxlength="8">
+					<select id="c2">
+						<option class="yellow" value="yellow">Yellow</option>
+						<option class="red" value="red">Red</option>
+						<option class="pink" value="pink">Pink</option>
+						<option class="green" value="green">Green</option>
+						<option class="blue" value="blue">Blue</option>
+						<option class="purple" value="purple">Purple</option>
+					</select>
+				</div><br>
+				
+				<div class="nc" id="nc3">
+					<input type="text" id="p3" maxlength="8">
+					<select id="c3">
+						<option class="pink" value="pink">Pink</option>
+						<option class="yellow" value="yellow">Yellow</option>
+						<option class="red" value="red">Red</option>
+						<option class="green" value="green">Green</option>
+						<option class="blue" value="blue">Blue</option>
+						<option class="purple" value="purple">Purple</option>
+					</select>
+				</div><br>
+				
+				<div class="nc" id="nc4">
+					<input type="text" id="p4" maxlength="8">
+					<select id="c4">
+						<option class="green" value="green">Green</option>
+						<option class="yellow" value="yellow">Yellow</option>
+						<option class="pink" value="pink">Pink</option>
+						<option class="red" value="red">Red</option>
+						<option class="blue" value="blue">Blue</option>
+						<option class="purple" value="purple">Purple</option>
+					</select>
+				</div><br>
+				
+				<div class="nc" id="nc5">
+					<input type="text" id="p5" maxlength="8">
+					<select id="c5">
+						<option class="blue" value="blue">Blue</option>
+						<option class="yellow" value="yellow">Yellow</option>
+						<option class="pink" value="pink">Pink</option>
+						<option class="green" value="green">Green</option>
+						<option class="red" value="red">Red</option>
+						<option class="purple" value="purple">Purple</option>
+					</select>
+				</div><br>
+				
+				<div class="nc" id="nc6">
+					<input type="text" id="p6" maxlength="8">
+					<select id="c6">
+						<option class="purple" value="purple">Purple</option>
+						<option class="yellow" value="yellow">Yellow</option>
+						<option class="pink" value="pink">Pink</option>
+						<option class="green" value="green">Green</option>
+						<option class="blue" value="blue">Blue</option>
+						<option class="red" value="red">Red</option>
+					</select>
+				</div><br>
+			</div>
 
-	<button type="button" onclick="getdata()">Start</button>
-</div>
-</body>
+			<button type="button" onclick="getdata()">Start</button>
+			
+		</div>
+	</body>
 
 <script src="scripts.js"></script>
 
