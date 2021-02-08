@@ -28,7 +28,7 @@
 	</head>
 	<body>
 		<?php
-			$data = explode(",",$_GET['data']);
+			$data = explode(",",$_GET['data']); //numberOfPlayers, name1, color1, name2, color2, ...
 		?>
 		
 		<div class="content">
@@ -38,7 +38,7 @@
 			  <tr>
 				<th>Ποιος;</th>
 				<?php
-					for ($i = 2; $i <= sizeof($data); $i = $i+2) { //numberOfPlayers, name1, color1, name2, color2, ...
+					for ($i = 2; $i <= sizeof($data); $i = $i+2) {
 						echo "<th style=\"color:" . $data[$i] . ";\">" . $data[$i-1] . "</th>";
 					}
 				?>
@@ -220,56 +220,60 @@
 			</table>
 		</div>
 	</body>
+	
 	<script>
-		var table = document.getElementById("table");
+	
+	var table = document.getElementById("table");
 		
-		if (table != null) {
-			for (var i = 1; i < table.rows.length; i++) {
-				for (var j = 0; j < table.rows[i].cells.length; j++)
-					if (j == 0) {
-						table.rows[i].cells[j].addEventListener("click", cross);
-					}
-					else {
-						table.rows[i].cells[j].addEventListener("click", pos);
-					}
-			}
+	if (table != null) {
+		for (var i = 1; i < table.rows.length; i++) {
+			for (var j = 0; j < table.rows[i].cells.length; j++)
+				if (j == 0) {
+					table.rows[i].cells[j].addEventListener("click", cross);
+				}
+				else {
+					table.rows[i].cells[j].addEventListener("click", pos);
+				}
 		}
-		
-		var c = 1;
-		
-		function cross() {
-			if (c == 1) {
-				c = 2;
-				this.style.backgroundColor = "#ffff80";
-			}
-			else if (c == 2) {
-				c = 3;
-				this.style.backgroundColor = "#ff8080";
-			}
-			else if (c == 3) {
-				c = 1;
-				this.style.backgroundColor = "#99e699";
-			}
+	}
+
+	var c = 1;
+
+	function cross() {
+		if (c == 1) {
+			c = 2;
+			this.style.backgroundColor = "#ffff80";
 		}
-		
-		var p = 1;
-																		
-		function pos() {
-			if (p == 1) {
-				this.style.backgroundColor = "#ffff80";
-				this.innerHTML = "???";
-				p = 2;
-			}
-			else if (p == 2) {
-				this.style.backgroundColor = "#ff8080";
-				this.innerHTML = "NO";
-				p = 3;
-			}
-			else if (p == 3) {
-				this.style.backgroundColor = "#99e699";
-				this.innerHTML = "YES";
-				p = 1;
-			}
+		else if (c == 2) {
+			c = 3;
+			this.style.backgroundColor = "#ff8080";
 		}
+		else if (c == 3) {
+			c = 1;
+			this.style.backgroundColor = "#99e699";
+		}
+	}
+
+	var p = 1;
+																	
+	function pos() {
+		if (p == 1) {
+			this.style.backgroundColor = "#ffff80";
+			this.innerHTML = "???";
+			p = 2;
+		}
+		else if (p == 2) {
+			this.style.backgroundColor = "#ff8080";
+			this.innerHTML = "NO";
+			p = 3;
+		}
+		else if (p == 3) {
+			this.style.backgroundColor = "#99e699";
+			this.innerHTML = "YES";
+			p = 1;
+		}
+	}
+	
 	</script>
+	
 </html>
