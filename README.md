@@ -26,7 +26,7 @@ one of the following colors: green, red, yellow.
 
 ![Demo Screenshot from the index page](https://github.com/Ntelos/Cluedo-Notes/blob/main/images/demo_board.png?raw=true)
 
-My thinking about the <b>marking</b>:
+My thinking about the <b>marks</b>:
 
 If you mark the <b>first column</b>:
 
