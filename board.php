@@ -262,12 +262,12 @@
 			}
 			else if (p == 2) {
 				this.style.backgroundColor = "#ff8080";
-				this.innerHTML = "ΔΕΝ";
+				this.innerHTML = "NO";
 				p = 3;
 			}
 			else if (p == 3) {
 				this.style.backgroundColor = "#99e699";
-				this.innerHTML = "ΕΧΕΙ";
+				this.innerHTML = "YES";
 				p = 1;
 			}
 		}
