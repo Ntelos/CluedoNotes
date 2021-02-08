@@ -7,7 +7,7 @@
 An interactive page for keeping notes of your Cluedo games.
 	
 Keep in mind that the names at the board are displayed in the Greek language.
-You can easily alter them in your language by editing the <th> elements at the board.php file.
+You can easily alter them in your language by editing the \<th> elements at the board.php file.
 
 ## Demo
 By visiting the index.html page you can:
