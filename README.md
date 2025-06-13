@@ -6,7 +6,7 @@
 ## General Info
 An interactive page for keeping notes of your <b>Cluedo</b> games.
 
-You can try it [here](https://ntelos.github.io/CluedoNotes/).
+You can try it [here](https://users.iee.ihu.gr/~it174996/gametools/cluedonotes/).
 	
 Keep in mind that the names at the board are displayed in the Greek language.
 You can easily alter them in your language by editing the \<th> elements at the <i>board.php</i> file.
